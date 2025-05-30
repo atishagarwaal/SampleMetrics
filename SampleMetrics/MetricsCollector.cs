@@ -13,19 +13,25 @@ public class MetricsCollector
         _histogram = Metrics.CreateHistogram("demo_request_duration_seconds", "Histogram of request durations.");
     }
 
-    public void SimulateMetrics()
+    public async Task SimulateMetrics(CancellationToken cancellationToken)
     {
-        _counter.Inc();
-
-        _gauge.Inc();
-
-        Random rand = new Random();
-        double simulatedDuration = rand.NextDouble();
-        using (_histogram.NewTimer())
+        while (!cancellationToken.IsCancellationRequested)
         {
-            Thread.Sleep((int)(simulatedDuration * 1000));
-        }
+            _counter.Inc();
 
-        _gauge.Dec();
+            _gauge.Inc();
+
+            Random rand = new Random();
+            double simulatedDuration = rand.NextDouble();
+            using (_histogram.NewTimer())
+            {
+                await Task.Delay((int)(simulatedDuration * 1000), cancellationToken);
+            }
+
+            _gauge.Dec();
+
+            Console.WriteLine("Simulated metrics at " + DateTime.Now);
+            await Task.Delay(2000); // Every 2 seconds
+        }
     }
 }
