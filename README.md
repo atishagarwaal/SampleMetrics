@@ -16,7 +16,7 @@ The application hosts a minimal web server (using ASP.NET Core) that exposes met
 
      ![image](https://github.com/user-attachments/assets/544b7fef-f39c-41b0-bab7-4a8b495c2a29)
   6. Run Prometheus
-   
+     prometheus.exe --config.file=prometheus.yml
      ![image](https://github.com/user-attachments/assets/0a6f6be8-ad6d-41cf-8b40-9ab511560082)
   8. Open Prometheus http://localhost:9090
 
@@ -41,7 +41,7 @@ PushingMetrics is a .NET console application that collects metrics and "pushes" 
 
   1. Install Prometheus PushGateway
   2. Run Prometheus PushGateway
-
+     pushgateway.exe --web.listen-address=":9091"
      ![image](https://github.com/user-attachments/assets/9365813c-fde9-4572-b976-c531ef4f2e54)
   4. Run Application
 
@@ -53,6 +53,7 @@ PushingMetrics is a .NET console application that collects metrics and "pushes" 
 
      ![image](https://github.com/user-attachments/assets/adea6181-bbc1-4284-b552-c187c09904af)     
   7. Run Prometheus
+     prometheus.exe --config.file=prometheus.yml
 
      ![image](https://github.com/user-attachments/assets/0a6f6be8-ad6d-41cf-8b40-9ab511560082)   
   9. Install Grafana
