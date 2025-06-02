@@ -32,8 +32,5 @@ The application hosts a minimal web server (using ASP.NET Core) that exposes met
 
   14.  Create dashboard
 
-      ![Screenshot 2025-06-02 130646](https://github.com/user-attachments/assets/e159e893-8bbe-4418-8425-0f7e11e92fa4)
-
-
-
+        ![Screenshot 2025-06-02 130646](https://github.com/user-attachments/assets/e159e893-8bbe-4418-8425-0f7e11e92fa4)
 
