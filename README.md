@@ -48,7 +48,7 @@ PushingMetrics is a .NET console application that collects metrics and "pushes" 
   1. Install Prometheus PushGateway
   2. Run Prometheus PushGateway
 
-     ![image](https://github.com/user-attachments/assets/bbe2335b-7950-4e0c-acf0-a735037c6647)
+     ![image](https://github.com/user-attachments/assets/9365813c-fde9-4572-b976-c531ef4f2e54)
   4. Run Application
 
      ![image](https://github.com/user-attachments/assets/8c4893d1-63f2-485e-998c-f7a6ca915e18)
