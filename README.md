@@ -22,5 +22,18 @@ The application hosts a minimal web server (using ASP.NET Core) that exposes met
 
      ![image](https://github.com/user-attachments/assets/408e4a18-80f3-4e8d-9036-0047cec78194)
   9. Install Grafana
-  10. Add data source - http://localhost:9090
+  10. Open Grafana at http://localhost:3000
+  11. Add data source - http://localhost:9090
+
+      ![image](https://github.com/user-attachments/assets/ce9050ef-ba89-49a1-89a6-9048f4aa6756)
+  12. Explore metrics with Drilldown
+
+      ![image](https://github.com/user-attachments/assets/fa1412ac-eac9-44de-8bfe-1fbdc3fcdfc4)
+
+  14.  Create dashboard
+
+      ![Screenshot 2025-06-02 130646](https://github.com/user-attachments/assets/e159e893-8bbe-4418-8425-0f7e11e92fa4)
+
+
+
 
