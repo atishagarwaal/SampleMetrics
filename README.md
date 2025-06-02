@@ -33,4 +33,9 @@ The application hosts a minimal web server (using ASP.NET Core) that exposes met
   14.  Create dashboard
 
         ![Screenshot 2025-06-02 130646](https://github.com/user-attachments/assets/e159e893-8bbe-4418-8425-0f7e11e92fa4)
+       
+
+PushingMetrics is a .NET console application that collects metrics and "pushes" them to a Prometheus Pushgateway. This is useful for short-lived jobs or batch processes that can't be scraped by Prometheus directly. Instead of exposing an HTTP endpoint for Prometheus to scrape, this app uses the prometheus-net library to send (push) metrics to a Prometheus Pushgateway at the end of a job or at regular intervals.
+
+**Steps to test PushingMetrics locally**
 
